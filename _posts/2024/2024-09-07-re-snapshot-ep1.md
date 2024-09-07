@@ -3,7 +3,7 @@ layout: post
 title: RE Snapshot Ep.1 - Identifying Process Injection in Malware
 date: 07-09-2024
 categories: [Malware, obfuscation]
-tag: [Malware, offuscation]
+tag: [Malware, obfuscation]
 ---
 
 Text
