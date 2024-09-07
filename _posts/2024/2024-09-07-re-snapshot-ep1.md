@@ -8,7 +8,7 @@ tag: [Malware, obfuscation]
 
 Text
 
-## Header 1
+## Considerations
 
 Talk about process injeciton, dll injection, shellcode injeciton, how to identify it and follow the process into the injeciton exe
 
