@@ -62,5 +62,6 @@ Any blogs that fall under this category are not as organised as the other collec
 
 The above list in non-exxhaustive and should hopefully serve to show you the *type* of content you can expect to see.
 
+## Message
 
 If you'd like to contact me as a recruiter for a role you think I'd be a good fit for, or as a person who has questions for me about anything I write about, please message me via Linkedin. Otherwise, please enjoy this blog, I have fun putting these blogs together and it would be great if people could read them, get something out of them, and maybe share this blog website with others who you believe could get something useful out of my experiences.
