@@ -33,9 +33,9 @@ The fundamentals series is for things I have nailed down knoweldge wise. Specifi
 * MAC OS Archietecture
 * Introduction to Assembly Language
 * Introduction to Active Directory
-* CTI Core Pripciples
+* CTI Core Principles
 
-The above list in non-exxhaustive and should hopefully serve to show you the *type* of content you can expect to see for this series.
+The above list in non-exhaustive and should hopefully serve to show you the *type* of content you can expect to see for this series.
 
 
 ## Cyber Warfare
@@ -53,13 +53,14 @@ The above list in non-exxhaustive and should hopefully serve to show you the *ty
 
 ## Unordered titles
 
-Any blogs that fall under this category are not as organised as the other collections. The structure is somewhat looser in writing style, along with being more conversational. These blogs will cover things like specific tools, tevhniques, or things that I have learned. These could be:
+Any blogs that fall under this category are not as organised as the other collections. The structure is somewhat looser in writing style, along with being more conversational. These blogs will cover things like specific tools, techniques, or things that I have learned. These could be:
 
 * A blog about a malware campaign where I have analysed the sample(s), and have learned things along the way. Both my successes and faliures will be in here
 * A blog covering a specific tool, like using Volatiltiy for malware analysis
-* Non-technical blogs about how to stufy for certifications, and how to go about getting a cyber role
+* Non-technical blogs about how to study for certifications, and how to go about getting a cyber role
 * Building custom tooling like a custom C2 framework
 
 The above list in non-exxhaustive and should hopefully serve to show you the *type* of content you can expect to see.
 
 
+If you'd like to contact me as a recruiter for a role you think I'd be a good fit for, or as a person who has questions for me about anything I write about, please message me via Linkedin. Otherwise, please enjoy this blog, I have fun putting these blogs together and it would be great if people could read them, get something out of them, and maybe share this blog website with others who you believe could get something useful out of my experiences.
