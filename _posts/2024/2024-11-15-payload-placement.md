@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Payload Placement Part One - Offensive
+title: Payload Placement
 date: 15-11-2024
 categories: [Malware, Malware Development]
 tag: [Malware, Malware Development]
