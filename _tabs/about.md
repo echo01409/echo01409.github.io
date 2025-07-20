@@ -14,7 +14,7 @@ In my spare time, I love to read and study treatise on hisotry, philosophy, and 
 
 I have established this blog as a place to conduct research, analyse malware, and share threat intelligence. Any opinions expressed in this blog are solely my own and do not represent my employer in any way. 
 
-If you want to see any research I've published under Immersive's Container 7 brand, feel free to review the [Container 7 Website](https://www.immersivelabs.com/container7#Section-C7-3). A standout includes an analysis of the [ZEROLOT](https://www.immersivelabs.com/resources/blog/zerolot-analysis-inside-sandworms-destructive-new-wiper) wiper, used by the Sandworm APT.
+If you want to see any research I've published under Immersive's Container 7 (C7) brand, feel free to review the [Container 7 Website](https://www.immersivelabs.com/container7#Section-C7-3). A standout includes an analysis of the [ZEROLOT](https://www.immersivelabs.com/resources/blog/zerolot-analysis-inside-sandworms-destructive-new-wiper) wiper, used by the Sandworm APT.
 
 
 
