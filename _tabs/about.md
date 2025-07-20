@@ -10,7 +10,7 @@ Allot has changed since then, where I've taken my intelligence and criminal inve
 
 As such, my main areas of interest cover cyber threat intelligence, intelligence studies, cybercrime (including cryptocurrencies use in enabling crime), geopolitics, and reverse engineering - particularly RATS and stealers. I also have a healthy interest in red teaming through threat led testing, using adversarial TTPs to map attack flows for detection engineering.
 
-In my spare time, I love to read and study treatise on hisotry, philosophy, and warfare - like the Art of War, The Prince, Meditations, and thr works of Cassius Dio. I'm also a massive Warhammer nerd and have been building, panting, and playing the game for over 13 years.
+In my spare time, I love to read and study treatise on hisotry, philosophy, and warfare - like the Art of War, The Prince, Meditations, and thr works of Cassius Dio. I'm also a massive Warhammer nerd and have been building, painting, and playing the game for over 13 years.
 
 I have established this blog as a place to conduct research, analyse malware, and share threat intelligence. Any opinions expressed in this blog are solely my own and do not represent my employer in any way. 
 
