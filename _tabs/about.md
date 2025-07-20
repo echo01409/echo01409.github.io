@@ -4,13 +4,17 @@ icon: fas fa-info-circle
 order: 1
 ---
 
-My name is Ben Hopkins. I have been working in various cyber domains including GRC, Threat Intelligence, Malware Analysis and Reverse Engineering. In addition, I have exposure to setting up servers and infrasturcture, and performing adversary emulation of threat actors using custom-built malware and C2 frameworks.
+After transitioning from a career in Policing, I found cybersecurity. By training myself up on Youtube and sitting a couple of certification exams, I was able to land a job as a Junior GRC analyst at Immersive Labs.
 
-I currently work at [Immersive](https://www.immersivelabs.com/) on the Cyber Threat Intelligence team, which also doubles up as a research and development team - which means I get to work on many interesting and varied projects. My blog reflects this cross functional nature, and although the meat and potatoes of my blog will be CTI and malware related, other interesting things will inevitably trickle in.
+Allot has changed since then, where I've taken my intelligence and criminal investigation experience I got in Policing, and my criminology and psychology knowledge I gained through my degree and brought it into cybersecurity - by becoming a Cyber Threat Intelligence Researcher.
 
-I have spoken on a number of webinars about malware and cyber threat intelligence, if you're interested, check out this webinar I spoke on from the [Immersive Community - The Human Connection](https://community.immersivelabs.com/event/community-events/operational-cti-lessons-from-the-attacks-that-didn%E2%80%99t-target-you/1573) on what you can learn about attacks that didn't target you.
+As such, my main areas of interest cover cyber threat intelligence, intelligence studies, cybercrime (including cryptocurrencies use in enabling crime), geopolitics, and reverse engineering - particularly RATS and stealers. I also have a healthy interest in red teaming through threat led testing, using adversarial TTPs to map attack flows for detection engineering.
 
-If you wish to contact me, my Linkedin is provided on this site in the left-hand paign.
+In my spare time, I love to read and study treatise on hisotry, philosophy, and warfare - like the Art of War, The Prince, Meditations, and thr works of Cassius Dio. I'm also a massive Warhammer nerd and have been building, panting, and playing the game for over 13 years.
+
+I have established this blog as a place to conduct research, analyse malware, and share threat intelligence. Any opinions expressed in this blog are solely my own and do not represent my employer in any way. 
+
+If you want to see any research I've published under Immersive's Container 7 brand, feel free to review the [Container 7 Website](https://www.immersivelabs.com/container7#Section-C7-3). A standouts includes analysis of [ZEROLOT](https://www.immersivelabs.com/resources/blog/zerolot-analysis-inside-sandworms-destructive-new-wiper).
 
 
 
