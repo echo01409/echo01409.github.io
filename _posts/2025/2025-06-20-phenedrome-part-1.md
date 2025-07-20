@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  Return of the Phemedrone Stealer - Part One
-date: 2025-06-13
+date: 2025-06-20
 categories: [Malware, Loader, DotNet]
 tag: [Malware, Loader, DotNet]
 ---
 
-<img src="assets/images/blogs/anydesk/Phen-Banner-part1.png" alt="Phen Banner" width="800" height="500">
+<img src="assets/images/blogs/Phenedrome/Phen-Banner-part1.png" alt="Phen Banner" width="800" height="500">
 
 
 ## Overview
@@ -32,11 +32,11 @@ TL;DR, this is what's going on with the loader:
 
 As mentioned in the Overview section, the campaign begins with a fake AnyDesk website that the victim is tricked into visiting. This could either be by pushing the fake site in Google Ads, or impersonating internal IT support and pushing the link through a phishing email. 
 
-<img src="assets/images/blogs/anydesk/fake-anydesk.jpeg" alt="fake anydesk website clone" width="500" height="500">
+<img src="assets/images/blogs/Phenedrome/fake-anydesk.jpeg" alt="fake anydesk website clone" width="500" height="500">
 
 The image above shows the fake website, and below is the real one:
 
-<img src="assets/images/blogs/anydesk/real-anydesk.png" alt="fake anydesk website clone" width="500" height="500">
+<img src="assets/images/blogs/Phenedrome/real-anydesk.png" alt="fake anydesk website clone" width="500" height="500">
 
 Both look very similar, minus a few small UI differences like the dark mode option. The fake website is being hosted at `anydeske[.]icu`. This domain gets used by the loader, which we'll discuss next.
 
@@ -55,7 +55,7 @@ Below is the `Main()` function of the loader, and the first thing I noticed was 
 
 With the above in mind, let's break down the `Main()` function itself:
 
-<img src="assets/images/blogs/anydesk/loader-main.png" alt="main function for the loader" width="500" height="500">
+<img src="assets/images/blogs/Phenedrome/loader-main.png" alt="main function for the loader" width="500" height="500">
 
 Firstly, we have a variable called `encryptedURL` that contains a number of bytes:
 
@@ -119,23 +119,23 @@ print("[-] Decrypted URL:", plaintext.decode("utf-8"))
 
 The output I got from the script is below:
 
-<img src="assets/images/blogs/anydesk/load-extract-output.png" alt="location of salt and iteration count" width="800" height="800">
+<img src="assets/images/blogs/Phenedrome/load-extract-output.png" alt="location of salt and iteration count" width="800" height="800">
 
 In terms of how I found this inofmraiton in the loader, the password `"FoxMalder3301"` was in the `Main()` function, and the salt `"SaltValueForUrlDecryption"` was hardcoded in the `GenerateSecureKey` method, the iteration count was specificed right after the salt string:
 
 
-<img src="assets/images/blogs/anydesk/salt-location.png" alt="location of salt and iteration count" width="800" height="800">
+<img src="assets/images/blogs/Phenedrome/salt-location.png" alt="location of salt and iteration count" width="800" height="800">
 
 
 The information outlined above can also be obtained dynamically by running the program in an isolated environment and setting breakpoints at the resolution of each instruction - below is the decrypted domain and a directory location:
 
-<img src="assets/images/blogs/anydesk/domain-and-location.png" alt="domain and install directory" width="800" height="800">
+<img src="assets/images/blogs/Phenedrome/domain-and-location.png" alt="domain and install directory" width="800" height="800">
 
 Specifcially, the loader contacts the domain, downloads an executable file called `"enstall.exe"` [(VirusTotal)](https://www.virustotal.com/gui/file/29c5fe838dbcf78b8e6c77c60cd8a2e6c19515b6cd986e11d3b3e4af5fe61c73/detection), remanes it to `"saturn.exe"`, and saves it to `C:\Users\Username\AppData\Local\Temp`. `"enstall.exe"` is the actual Phemedrone Stealer which will be covered in the next section, but before it's run, the loader has a few more tasks it does to ready the victim machine.
 
 If the Stealer was run without checking and disabling security, there's a really good chance it would be stopped from running, considering its a couple of years old now and has been signitured - As such, the loader writes a Windows Defender exclusion path.
 
-<img src="assets/images/blogs/anydesk/defender-exclusion.png" alt="defender exclusion path" width="800" height="800">
+<img src="assets/images/blogs/Phenedrome/defender-exclusion.png" alt="defender exclusion path" width="800" height="800">
 
 It starts by getting the first folder path it it's list, shown below, which resolves to `C:\ProgramData`.
 
@@ -177,7 +177,7 @@ Program.ExecutePowerShellCommand(text5);  // Excludes %TEMP% (text5 is temp)
 
 Finally, the downloaded file `"saturn.exe"` (The Phemedrone Stealer) is executed.
 
-<img src="assets/images/blogs/anydesk/loader-exe-run.png" alt="Run the stealer" width="800" height="800">
+<img src="assets/images/blogs/Phenedrome/loader-exe-run.png" alt="Run the stealer" width="800" height="800">
 
 ## Indicators of Compromise
 
@@ -195,9 +195,7 @@ Finally, the downloaded file `"saturn.exe"` (The Phemedrone Stealer) is executed
 
 ## Conclusion
 
-Okay, that was Part One. As I was writing this, I decided to split the campaign off into two parts as there is quite allot here. The Loader has been pretty simple, with little to no obfuscation or defence evasion. I've not really placed any focus on detecting the loader, since it's really simple and threat actors will change their methods of loading malware very regularly. In Part Two though, I'll cover the Phemodrone Stealer itself, reverse engineering it, and writing some high quality detections for it. 
-
-I'll also go into a bit of detail on how to map out adversary infrasturcture in Maltego and how you might go about building a mature intelligence picture of the scale and scope of malware campaigns.
+Okay, that was Part One. As I was writing this, I decided to split the campaign off into two parts as there is quite allot here. The Loader has been pretty simple, with little to no obfuscation or defence evasion. I've not really placed any focus on detecting the loader, since it's really simple and threat actors will change their methods of loading malware very regularly. In Part Two though, I'll cover the Phemodrone Stealer itself, by reverse engineering it and highlighting it's core functionality.
 
 
 
